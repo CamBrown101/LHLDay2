@@ -12,16 +12,16 @@
 // Write our function (we must define it too!) below
 // ...
 
-const joinList = (array) => {
+const joinList = (inputArray) => {
   // declare the string with the arrays to be placed
   let returnString = '';
   //loop through the array
-  for (let i = 0; i < array.length; i++) {
+  for (let i = 0; i < inputArray.length; i++) {
     //add each item of the array to the return string
     //seperate with a "," and a space
-    i === array.length - 1
-      ? (returnString += array[i])
-      : (returnString += array[i] + ', ');
+    i === inputArray.length - 1
+      ? (returnString += inputArray[i])
+      : (returnString += inputArray[i] + ', ');
   }
   //return the final string
   return returnString;
